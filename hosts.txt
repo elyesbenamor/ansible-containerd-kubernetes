@@ -1,17 +1,17 @@
 [all]
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
 
 
 [workers]
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
 
 [master]
-xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=yyyy
 
 [itisall:children]
 workers
