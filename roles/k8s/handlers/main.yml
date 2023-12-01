@@ -1,0 +1,6 @@
+---
+- name: restart kubelet
+  service: name=kubelet state=restarted
+- name: Update apt package index
+  apt:
+    update_cache: yes

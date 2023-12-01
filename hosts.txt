@@ -1,0 +1,24 @@
+[all]
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+
+
+[workers]
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+
+[master]
+xxxxxx   ansible_connection=ssh        ansible_user=ebenamor
+
+[itisall:children]
+workers
+master
+
+[master:vars]
+kubernetes_role=control_plane
+
+[workers:vars]
+kubernetes_role=node
